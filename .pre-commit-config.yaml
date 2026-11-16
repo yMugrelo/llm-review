@@ -1,0 +1,8 @@
+# rev fixado na mesma versão do ruff em requirements.txt (local == pre-commit == CI).
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.17.5
+    hooks:
+      - id: ruff-check
+        args: [--fix]
+      - id: ruff-format
