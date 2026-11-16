@@ -20,6 +20,13 @@ base = [
     "pyyaml>=6.0",
     "mlflow>=2.16",
     "matplotlib>=3.9",
+    "pyarrow>=15",      # engine de parquet do pandas (data/processed/*.parquet)
+]
+# Notebook de EDA: só o tokenizer do BERTimbau (sem torch) + kernel/execução. Fora do CI.
+eda = [
+    "transformers>=4.45",
+    "ipykernel>=6.29",
+    "nbconvert>=7.16",
 ]
 # Deep learning / QLoRA. Pesado: NUNCA instalado no CI.
 dl = [

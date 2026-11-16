@@ -267,6 +267,7 @@ protobuf==7.36.2
     #   opentelemetry-proto
 pyarrow==26.0.1
     # via
+    #   pt-review-lora (pyproject.toml)
     #   datasets
     #   mlflow
 pyasn1==0.6.5
